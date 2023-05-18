@@ -1,37 +1,54 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="shortcut icon" href="/devtools-samples/favicon-96x96.png"/>
-    <link rel="stylesheet" type="text/css" href="CSS.css"/>
-    <title>Cakes </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      h1 {
-        font-size: 1.5em
-      }
 
-    </style>
-  </head>
-  <body>
-    <h1>cake</h1>
-    <h2>Least amount of ingredients to make a cake: </br>1 mix </br>2 eggs </br>1 vanilla</br>32 chips </h2>
-    <p>How many cakes do you want to make?</p>
-    <input id="cakesNum" type="number" placeholder="Enter a number">
-    <input type="submit" value="Submit" 
-        onclick="TestCases()">
-    <p>How many ingredients do you want to add?</p>
-    <input id="ingredients"type="number" placeholder="Enter a number(≥4)" min="4">
-    <input type="submit" value="Submit" 
-        onclick="IngNum()">
-    </br>
-    </br>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Jorge create an array static </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <input type="submit" value="Submit" 
-        onclick="makeThing()">
-    <p></p>
-    <section id="poop">
-      
+</head>
+
+<body id="antiFirefox" style="min-width: 100%;">
+  <header id="title">
+    <h1>Recipe Calculator</h1>
+  </header>
+
+
+
+
+
+
+
+  <section id="ingCountSection">
+    <p id="ingQuestion">How many ingredients?</p>
+    <input id="ingCount" type="number" placeholder="Enter number here">
+  </section>
+
+
+  <section id="recipeBox">
+    <!-- add section to these, add section for all of the js things -->
+    <section id="recipeLabel">
+      <h2>Name of ingredient</h2>
+      <h2>Amount of the ingredient you have</h2>
+      <h2>Amount of ingredients you need each batch</h2>
+      <h2>Amount of batches you have of this ingredient</h2>
+      <h2>Amount left over</h2>
     </section>
-    <script src="myJS.js"></script>
-  </body>
+
+    <section id="inputSection">
+
+    </section>
+
+  </section>
+
+<section id="batchesBox">
+  <h3>
+</h3>
+
+</section>
+
+
+  <script src="code.js"></script>
+</body>
+
 </html>

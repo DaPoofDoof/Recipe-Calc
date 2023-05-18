@@ -1,0 +1,217 @@
+
+@keyframes colorshift{
+	0%{background-color: #84bbc2;}
+
+	100%{background-color: #58a0b6;}
+}
+@keyframes reversecolorshift{
+	0%{background-color: #58a0b6;}
+
+	100%{background-color: #84bbc2;}
+}
+
+
+*
+{
+	font-family: "Cabin Regular";
+
+}
+
+body
+{
+	position:relative;
+	background: linear-gradient(to top, rgb(29, 114, 145), rgb(26, 85, 114));
+	height: 100vh;
+	overflow: hidden;
+	min-width: 1500px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h2{
+    width: 15vw;
+	height: 14vh;
+	margin:0;
+	font-size: 1.5vw;
+	border-right: 2px #2f4f4f solid;
+	border-left: 2px #2f4f4f solid;
+	border-radius: 10;
+	text-align: center;
+    
+}
+h1{
+    margin: 0% 0% 0% 0%;
+    height: 100%;
+	font-size: 10vh;
+}
+
+.cssClass
+{
+	
+	background-color: #84bbc2;
+	border: 2px black solid;
+	border-radius: 5px;
+	font-size: 200%;
+	height: 10%;
+	margin: 1%;
+	margin-top: 1vh;
+	width: 15%;
+}
+#ingName:hover{
+	animation-timing-function: ease-out;
+	animation: colorshift;
+	background-color: #58a0b6;
+	animation-duration: .5s;
+}
+#ingName:not(:hover){
+	animation-timing-function: ease-out;
+	animation: reversecolorshift;
+	animation-duration: .5s;
+}
+#ingAmt:hover{
+	animation-timing-function: ease-out;
+	animation: colorshift;
+	background-color: #58a0b6;
+	animation-duration: .5s;
+}
+#ingAmt:not(:hover){
+	animation-timing-function: ease-out;
+	animation: reversecolorshift;
+	animation-duration: .5s;
+}
+#amtNeeded:hover{
+	animation-timing-function: ease-out;
+	animation: colorshift;
+	background-color: #58a0b6;
+	animation-duration: .5s;
+}
+#amtNeeded:not(:hover){
+	animation-timing-function: ease-out;
+	animation: reversecolorshift;
+	animation-duration: .5s;
+}
+#batchesBox{
+	height: 25vh;
+	width: 20vw;
+	overflow: visible;
+	background-color: #2F8BAA;
+	border: 5px DarkSlateGray solid;
+	border-radius: 20px;
+	box-shadow: rgba(0, 174, 248, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	float: left;
+
+}
+#inputSection
+{
+	background-color: #2F8BAA;
+	flex: 1;
+	overflow: auto;
+	height: 76%;
+	margin: 2%;
+	margin-top: 0px;
+	margin-left: 2px auto;
+	width: 95%;
+    
+}
+
+::-webkit-scrollbar{
+	width: 15px;
+	
+}
+::-webkit-scrollbar-thumb{
+	background-color:#0f41587a;
+	border-radius: 50px;
+	border: rgb(0, 195, 255) 2px solid;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color:rgb(13, 0, 197);
+	
+}
+
+#ingCount
+{
+	background-color: #84bbc2;
+	border: 5px #586e66 solid;
+	border-radius: 30px;
+	font-size: 50px;
+	height: 15vh;
+	margin: 3%;
+	width: 90%;
+}
+#ingCount:hover{
+	animation-timing-function: ease-out;
+	animation: colorshift;
+	background-color: #58a0b6;
+	animation-duration: .5s;
+}
+#ingCount:not(:hover){
+	animation-timing-function: ease-out;
+	animation: reversecolorshift;
+	animation-duration: .5s;
+}
+#ingCountSection
+{
+	width: 24vw;
+    height: 80vh;
+  
+    float: left;;
+}
+
+#ingQuestion
+{
+	align-items: center;
+	background-color: #336f85;
+	border: 5px solid DarkSlateGray;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.473) 0px 13px 27px -5px, rgb(3, 1, 1) 0px 8px 16px -8px;
+	color: Black;
+	font-size: 3vw;
+	height: 15vh;
+	margin: 3%;
+	text-align: center;
+	width: 90%;
+}
+#recipeLabel
+{
+	background-color: #2F8BAA;
+	border: 5px DarkSlateGray solid;
+	border-radius: 10px;
+	display: flex;
+	height: auto;
+	margin: 2%;
+	margin-bottom: 0;
+	font-size: 100vh;
+	width: 95%;;
+    
+}
+#recipeBox
+{
+	background-color: #2F8BAA;
+	border: 5px DarkSlateGray solid;
+	border-radius: 20px;
+	box-shadow: rgba(0, 174, 248, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	height: 79vh;
+	
+	flex: 1;
+	float: left;
+	margin: 1vw ;
+	width: 48vw;
+	
+    
+}
+#title
+{
+	color: white;
+	display: flex;
+	font-size: 250%;
+	justify-content: center;
+	margin: 0 25vw 0 25vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
